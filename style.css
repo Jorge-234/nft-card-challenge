@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG:  hsl(216, 50%, 16%);
+    --line:  hsl(215, 32%, 27%) ;
+    --white:   hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%) ;
+}
+.container {
+    font-family: Outfit;
+    background-color: var(--main-BG);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+#mainn {
+    background-color: var(--card-BG);
+    max-width: 16rem;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.profile img {
+    border-radius: 8px;
+   max-width: 14rem;
+}
+.profile h2 {
+    color: var(--white);
+    margin: 19px 0;
+    font-size: 20px;
+}
+.profile p {
+    /* font-size: 15px; */
+    color: var(--soft-blue);
+}
+.content {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 0.1px solid var(--soft-blue);
+    justify-content: space-between;
+}
+.content .price {
+    display: flex;
+    color: var(--cyan);
+}
+.content .price p { 
+    margin-left: 10px;
+}
+.content .day {
+    color: var(--soft-blue);
+    display: flex;
+}
+.content .day p {
+    margin-left: 10px;
+}
+.content + section {
+    display: flex;
+    font-size: 13px;
+    color: var(--soft-blue);
+    margin-top: 1rem;
+}
+.content + section img {
+   height: 23px; 
+   margin-right: 9px;
+}
+section .article {
+    margin-left: 3px;
+    color: var(--white);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    background-color: var(--main-BG);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+@media (min-width: 840px) {
+    .container {
+        display: flex;
+        background-color: var(--main-BG);
+        font-size: 17px;
+        height: 100vh;
+    }
+    #mainn {
+        background-color: var(--card-BG);
+        max-width: 19rem;
+        min-height: 100v;
+    }
+    .profile {
+        font-size: 17px;
+    }
+    .profile h2 {
+        font-size: 24px;
+        margin-bottom: 19px;
+    }
+    .profile p {
+        margin-bottom: 19px;
+    }
+    .profile img {
+        border-radius: 8px;
+        max-width: 17rem;
+    }
+    .content + section {
+        margin: 1rem 0;
+        font-size: 16px;
+    }
+}
